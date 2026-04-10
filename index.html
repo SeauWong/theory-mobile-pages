@@ -3,397 +3,86 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>结构、建构、解构与心智</title>
+    <title>系统侦察任务</title>
     <meta
       name="description"
-      content="一份面向移动端的中文专题页，介绍结构主义、建构主义、解构主义与认知科学之间的差异、交叉与现实意义。"
+      content="一款手机竖版轻游戏，用结构主义、建构主义与认知科学的方法，训练你在 AI 信息爆炸时代快速认识一个系统，而不是把思考外包给 AI。"
     />
+    <meta name="theme-color" content="#f5f1ea" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="结构、建构、解构与心智" />
+    <meta property="og:title" content="系统侦察任务" />
     <meta
       property="og:description"
-      content="一份面向移动端的中文专题页，介绍结构主义、建构主义、解构主义与认知科学之间的差异、交叉与现实意义。"
+      content="在五个短关卡里学会如何划定边界、扫描结构、建构模型、认知压缩，并把 AI 当作脚手架而不是代脑。"
     />
     <meta property="og:image" content="./share-cover.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:image:type" content="image/png" />
-    <meta property="og:site_name" content="结构、建构、解构与心智" />
+    <meta property="og:site_name" content="系统侦察任务" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="结构、建构、解构与心智" />
+    <meta name="twitter:title" content="系统侦察任务" />
     <meta
       name="twitter:description"
-      content="一份面向移动端的中文专题页，介绍结构主义、建构主义、解构主义与认知科学之间的差异、交叉与现实意义。"
+      content="用手机竖版轻游戏的方式，学习如何在 AI 时代快速认识系统，而不是让 AI 替你思考。"
     />
     <meta name="twitter:image" content="./share-cover.png" />
     <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <a class="skip-link" href="#intro">跳到正文</a>
-    <div class="page-shell">
-      <header class="hero" id="top">
-        <p class="hero-kicker">Mobile Editorial Feature</p>
-        <div class="hero-frame">
-          <p class="hero-label">四种框架，不是一条接力赛</p>
-          <h1>结构、建构、解构与心智</h1>
-          <p class="hero-dek">
-            结构主义、建构主义、解构主义与认知科学，并不是谁取代谁，而是四种看世界的方法：
-            有的追问规则，有的追问生成，有的追问裂缝，有的追问心智如何工作。
-          </p>
-        </div>
-        <div class="hero-meta" aria-label="专题摘要">
-          <div>
-            <span>阅读定位</span>
-            <strong>中文科普型</strong>
-          </div>
-          <div>
-            <span>适合读者</span>
-            <strong>人文 / 教育 / 产品 / AI</strong>
-          </div>
-          <div>
-            <span>阅读方式</span>
-            <strong>移动端长滚动</strong>
-          </div>
-        </div>
-      </header>
-
-      <nav class="section-nav" aria-label="章节导航">
-        <a href="#intro">引子</a>
-        <a href="#structuralism">结构主义</a>
-        <a href="#constructivism">建构主义</a>
-        <a href="#deconstruction">解构主义</a>
-        <a href="#cognitive-science">认知科学</a>
-        <a href="#comparison">对照</a>
-        <a href="#applications">应用</a>
-        <a href="#references">书目</a>
-      </nav>
-
-      <main>
-        <section class="panel reveal" id="intro" data-nav-label="引子">
-          <div class="section-head">
-            <span class="section-number">01</span>
-            <div>
-              <p class="section-kicker">为什么会把它们放在一起？</p>
-              <h2>它们都在回答：人如何理解世界</h2>
-            </div>
-          </div>
-          <p class="lead">
-            这四个主题常常出现在同一张书单里，不是因为它们属于同一学派，而是因为它们都在讨论一个大问题：
-            人如何在复杂现实中形成意义、知识与判断。
-          </p>
-          <div class="callout-grid">
-            <article>
-              <h3>结构主义</h3>
-              <p>先看关系网络，认为单个元素的意义来自它在系统中的位置。</p>
-            </article>
-            <article>
-              <h3>建构主义</h3>
-              <p>先看知识是怎样被建构出来的，强调主体、互动和情境的作用。</p>
-            </article>
-            <article>
-              <h3>解构主义</h3>
-              <p>先看文本与概念内部的张力，提醒我们意义并不总是稳定封闭的。</p>
-            </article>
-            <article>
-              <h3>认知科学</h3>
-              <p>先看心智机制，研究感知、记忆、推理、语言与学习如何运作。</p>
-            </article>
-          </div>
-          <blockquote class="feature-quote">
-            “它们不是从同一条时间线上排队出现，而是从不同入口逼近同一个问题：意义是如何形成的？”
-          </blockquote>
-        </section>
-
-        <section class="panel reveal theory-structuralism" id="structuralism" data-nav-label="结构主义">
-          <div class="section-head">
-            <span class="section-number">02</span>
-            <div>
-              <p class="section-kicker">Structuralism</p>
-              <h2>结构主义：意义来自关系，而不是孤立事物</h2>
-            </div>
-          </div>
-          <div class="theory-grid">
-            <article class="theory-card">
-              <h3>定义</h3>
-              <p>
-                结构主义关心的是系统中的差异、规则与位置关系。一个元素之所以有意义，不是因为它“自带本质”，
-                而是因为它与其他元素形成了可区分的结构。
-              </p>
-            </article>
-            <article class="theory-card">
-              <h3>直观理解</h3>
-              <p>
-                像一盘棋，棋子的功能不只取决于它是什么，更取决于它在整套规则中的移动方式与相互制约。
-              </p>
-            </article>
-            <article class="theory-card">
-              <h3>例子</h3>
-              <p>
-                在语言学里，“猫”之所以有意义，不是因为这个声音天然像猫，而是因为它在语言系统中与“狗”“帽”“猫科动物”等词构成了差异网络。
-              </p>
-            </article>
-            <article class="theory-card">
-              <h3>与其他流派的差异</h3>
-              <p>
-                它不像建构主义那样强调主体如何生成知识，也不像解构主义那样优先追问结构内部的不稳定性；它更相信深层规则可以被描述出来。
-              </p>
-            </article>
-          </div>
-          <aside class="margin-note">
-            代表人物常包括索绪尔、列维-斯特劳斯、罗兰·巴特早期等。
-          </aside>
-        </section>
-
-        <section class="panel reveal theory-constructivism" id="constructivism" data-nav-label="建构主义">
-          <div class="section-head">
-            <span class="section-number">03</span>
-            <div>
-              <p class="section-kicker">Constructivism</p>
-              <h2>建构主义：知识不是被动接收，而是在活动中形成</h2>
-            </div>
-          </div>
-          <div class="theory-grid">
-            <article class="theory-card">
-              <h3>定义</h3>
-              <p>
-                建构主义强调知识不是简单地从外部复制进头脑，而是主体在与世界、他人和情境互动时逐步形成的。
-              </p>
-            </article>
-            <article class="theory-card">
-              <h3>直观理解</h3>
-              <p>
-                学习不是往空容器里倒内容，而更像搭脚手架：新的理解要依托旧经验，一层层修正、重组和扩展。
-              </p>
-            </article>
-            <article class="theory-card">
-              <h3>例子</h3>
-              <p>
-                小孩学会“重量守恒”不是因为有人宣布一个规则，而是因为他在操作、观察和反复矫正中逐渐形成稳定概念。
-              </p>
-            </article>
-            <article class="theory-card">
-              <h3>容易混淆的地方</h3>
-              <p>
-                建构主义不等于“什么都对”，也不应被直接缩减为社会建构论。它可以强调个体认知建构，也可以强调社会互动建构，两者不是同一层面。
-              </p>
-            </article>
-          </div>
-          <aside class="margin-note">
-            常见路径包括皮亚杰的认知建构主义，以及维果茨基启发的社会文化取向。
-          </aside>
-        </section>
-
-        <section class="panel reveal theory-deconstruction" id="deconstruction" data-nav-label="解构主义">
-          <div class="section-head">
-            <span class="section-number">04</span>
-            <div>
-              <p class="section-kicker">Deconstruction</p>
-              <h2>解构主义：不是摧毁意义，而是追问意义如何失去稳定</h2>
-            </div>
-          </div>
-          <div class="theory-grid">
-            <article class="theory-card">
-              <h3>定义</h3>
-              <p>
-                解构关注文本、概念和二元对立内部的裂缝，指出看似稳定的意义经常依赖被压抑、被延迟或未被说出的东西。
-              </p>
-            </article>
-            <article class="theory-card">
-              <h3>直观理解</h3>
-              <p>
-                它像细读一篇文章时发现：作者想把边界画清楚，但用来支撑论证的词语，本身就在滑动和互相借义。
-              </p>
-            </article>
-            <article class="theory-card">
-              <h3>例子</h3>
-              <p>
-                当一个文本把“理性”抬高，把“情感”放低时，解构会追问：这种排序如何建立？它依赖了哪些被忽略的前提？这些前提是否反过来动摇了排序本身？
-              </p>
-            </article>
-            <article class="theory-card">
-              <h3>与“否定一切”的误解区分</h3>
-              <p>
-                解构不是说没有意义，而是说意义从来不是一次性封口完成的。它更像提高解释警觉性，而不是取消解释。
-              </p>
-            </article>
-          </div>
-          <aside class="margin-note">
-            讨论时常会提到德里达，以及他对“差异”“延异”和书写问题的推进。
-          </aside>
-        </section>
-
-        <section class="panel reveal theory-cognitive" id="cognitive-science" data-nav-label="认知科学">
-          <div class="section-head">
-            <span class="section-number">05</span>
-            <div>
-              <p class="section-kicker">Cognitive Science</p>
-              <h2>认知科学：把“理解”变成可研究的心智过程</h2>
-            </div>
-          </div>
-          <div class="theory-grid">
-            <article class="theory-card">
-              <h3>定义</h3>
-              <p>
-                认知科学研究人如何感知、表征、记忆、推理、使用语言并完成决策，通常结合心理学、语言学、哲学、神经科学与计算模型。
-              </p>
-            </article>
-            <article class="theory-card">
-              <h3>直观理解</h3>
-              <p>
-                如果前三者更多在讨论“意义的组织方式”，认知科学更进一步问：大脑和心智究竟怎样让这些组织成为可能？
-              </p>
-            </article>
-            <article class="theory-card">
-              <h3>例子</h3>
-              <p>
-                当人读一句歧义句时，认知科学会研究他如何调动工作记忆、上下文线索和预测机制来消解歧义。
-              </p>
-            </article>
-            <article class="theory-card">
-              <h3>与前三者的关系</h3>
-              <p>
-                它不是简单替代结构主义、建构主义或解构主义，而是把“意义如何被处理”转化为更可实验、可建模、可计算的问题。
-              </p>
-            </article>
-          </div>
-          <aside class="margin-note">
-            常见名字包括乌尔里克·奈瑟、戴维·马尔、乔治·莱考夫、杰罗姆·布鲁纳等。
-          </aside>
-        </section>
-
-        <section class="panel reveal" id="comparison" data-nav-label="对照">
-          <div class="section-head">
-            <span class="section-number">06</span>
-            <div>
-              <p class="section-kicker">Comparison</p>
-              <h2>一张移动端可读的对照表</h2>
-            </div>
-          </div>
-          <div class="comparison-grid" role="list" aria-label="四种框架对照">
-            <article class="comparison-card" role="listitem">
-              <h3>结构主义</h3>
-              <ul>
-                <li><strong>研究对象</strong>：系统、关系、符号位置</li>
-                <li><strong>方法</strong>：找深层规则与差异结构</li>
-                <li><strong>关键词</strong>：结构、符号、编码、二元关系</li>
-                <li><strong>代表人物</strong>：索绪尔、列维-斯特劳斯</li>
-                <li><strong>典型问题</strong>：意义为何由系统决定？</li>
-              </ul>
-            </article>
-            <article class="comparison-card" role="listitem">
-              <h3>建构主义</h3>
-              <ul>
-                <li><strong>研究对象</strong>：知识形成、学习过程、情境互动</li>
-                <li><strong>方法</strong>：关注主体经验与社会协作</li>
-                <li><strong>关键词</strong>：建构、脚手架、情境、发展</li>
-                <li><strong>代表人物</strong>：皮亚杰、维果茨基</li>
-                <li><strong>典型问题</strong>：知识如何被形成而非被灌输？</li>
-              </ul>
-            </article>
-            <article class="comparison-card" role="listitem">
-              <h3>解构主义</h3>
-              <ul>
-                <li><strong>研究对象</strong>：文本张力、概念裂缝、二元对立</li>
-                <li><strong>方法</strong>：细读、追问前提、揭示不稳定性</li>
-                <li><strong>关键词</strong>：差异、延异、痕迹、滑动</li>
-                <li><strong>代表人物</strong>：德里达</li>
-                <li><strong>典型问题</strong>：稳定意义为何总会被内部张力动摇？</li>
-              </ul>
-            </article>
-            <article class="comparison-card" role="listitem">
-              <h3>认知科学</h3>
-              <ul>
-                <li><strong>研究对象</strong>：感知、记忆、语言、推理、决策</li>
-                <li><strong>方法</strong>：实验、模型、计算、跨学科整合</li>
-                <li><strong>关键词</strong>：表征、加工、预测、心智机制</li>
-                <li><strong>代表人物</strong>：奈瑟、马尔、莱考夫</li>
-                <li><strong>典型问题</strong>：人如何在心智层面处理意义？</li>
-              </ul>
-            </article>
-          </div>
-        </section>
-
-        <section class="panel reveal" id="applications" data-nav-label="应用">
-          <div class="section-head">
-            <span class="section-number">07</span>
-            <div>
-              <p class="section-kicker">Applications</p>
-              <h2>它们为什么仍然值得今天的人阅读？</h2>
-            </div>
-          </div>
-          <div class="application-list">
-            <article>
-              <h3>语言与内容分析</h3>
-              <p>
-                结构主义帮助我们看到话语背后的模式，解构主义提醒我们注意概念内部的偏置，二者合起来能让内容分析更有层次。
-              </p>
-            </article>
-            <article>
-              <h3>教育与学习设计</h3>
-              <p>
-                建构主义影响了项目式学习、协作学习和脚手架式教学，而认知科学能进一步解释注意、反馈和记忆巩固为什么重要。
-              </p>
-            </article>
-            <article>
-              <h3>媒介与社会理解</h3>
-              <p>
-                当平台不断重写信息传播方式时，结构、建构和解构都能帮助我们识别“哪些意义来自制度，哪些来自互动，哪些来自叙事缝隙”。
-              </p>
-            </article>
-            <article>
-              <h3>AI 与认知启发</h3>
-              <p>
-                认知科学直接影响了对表征、推理与学习机制的理解；而前三者则提醒我们：模型输出不仅是计算结果，也嵌入了结构、语境与解释问题。
-              </p>
-            </article>
-          </div>
-        </section>
-
-        <section class="panel reveal" id="conclusion" data-nav-label="结语">
-          <div class="section-head">
-            <span class="section-number">08</span>
-            <div>
-              <p class="section-kicker">Conclusion</p>
-              <h2>边界与误解，比立场标签更值得关心</h2>
-            </div>
-          </div>
-          <p class="lead">
-            真正有用的阅读方式，不是急着判断谁“更先进”，而是知道在什么问题上该借哪套工具。要理解稳定结构时，结构主义很强；
-            要理解学习与形成时，建构主义更敏锐；要识别概念内部裂缝时，解构主义不可替代；要研究心智机制时，认知科学提供了实验与模型。
-          </p>
-          <p>
-            这四种框架并不要求彼此消灭。恰恰相反，它们共同组成了一张更复杂也更诚实的地图：
-            世界可以被组织，知识可以被形成，意义会发生滑动，而心智必须在其中持续工作。
-          </p>
-        </section>
-
-        <section class="panel reveal" id="references" data-nav-label="书目">
-          <div class="section-head">
-            <span class="section-number">09</span>
-            <div>
-              <p class="section-kicker">Reading List</p>
-              <h2>简短参考书目</h2>
-            </div>
-          </div>
-          <ol class="reference-list">
-            <li>费迪南·德·索绪尔：《普通语言学教程》</li>
-            <li>克洛德·列维-斯特劳斯：《结构人类学》</li>
-            <li>让·皮亚杰：《发生认识论原理》</li>
-            <li>彼得·伯格、托马斯·卢克曼：《现实的社会建构》</li>
-            <li>雅克·德里达：《论文字学》</li>
-            <li>乌尔里克·奈瑟：《认知心理学》</li>
-            <li>戴维·马尔：《视觉》</li>
-            <li>乔治·莱考夫、马克·约翰逊：《我们赖以生存的隐喻》</li>
-          </ol>
-        </section>
-      </main>
-
-      <footer class="site-footer">
-        <p>专题页适配 GitHub Pages / Cloudflare Pages，适合直接作为静态站点部署。</p>
-        <a class="back-to-top" href="#top">回到顶部</a>
-      </footer>
+    <a class="skip-link" href="#game-stage">跳到任务</a>
+    <div class="page-backdrop" aria-hidden="true">
+      <div class="page-orb page-orb-a"></div>
+      <div class="page-orb page-orb-b"></div>
+      <div class="page-grid"></div>
     </div>
+
+    <main class="app-shell">
+      <section class="phone-stage" aria-label="系统侦察任务">
+        <header class="chrome">
+          <div class="brand-block">
+            <p class="brand-kicker">System Recon</p>
+            <h1>系统侦察任务</h1>
+          </div>
+          <button id="reset-button" class="ghost-button" type="button">重新开始</button>
+        </header>
+
+        <section class="hud" aria-label="任务状态">
+          <div class="hud-row">
+            <div>
+              <p class="hud-label">当前进度</p>
+              <p class="hud-value" id="hud-progress-label">引导</p>
+            </div>
+            <div class="score-pill" id="score-pill">
+              <span>主动思考值</span>
+              <strong id="agency-score">100</strong>
+            </div>
+          </div>
+          <div class="progress-track" aria-hidden="true">
+            <span id="progress-bar"></span>
+          </div>
+          <div class="hud-row hud-row-secondary">
+            <div>
+              <p class="hud-label">任务标题</p>
+              <p class="hud-value" id="hud-title">系统侦察</p>
+            </div>
+            <button id="ai-shortcut-button" class="shortcut-button" type="button">
+              让 AI 先告诉我
+            </button>
+          </div>
+        </section>
+
+        <div class="live-region" id="live-region" aria-live="polite"></div>
+        <section class="game-stage" id="game-stage" tabindex="-1"></section>
+      </section>
+    </main>
+
+    <noscript>
+      <div class="noscript-card">
+        这个项目需要 JavaScript 才能运行，因为它是一个状态驱动的轻交互网页游戏。
+      </div>
+    </noscript>
 
     <script src="./script.js"></script>
   </body>

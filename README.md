@@ -1,10 +1,16 @@
-# theory-mobile-pages
+# system-scout
 
-一个面向移动端的中文静态专题页，主题为“结构主义、建构主义、解构主义与认知科学”。项目适合直接部署到 GitHub 或 Cloudflare Pages。
+一个手机竖版、单页、纯静态的轻交互网页游戏。主题是：在 AI 信息爆炸时代，如何快速认识一个系统，而不是把思考外包给 AI。
 
-## 本地预览
+产品通过 5 个短关卡，把三条方法线压缩成可操作动作：
 
-项目没有构建步骤，直接启动一个静态服务器即可。
+- 结构主义：先定边界，再看关系
+- 建构主义：先主动建模，再用证据修正
+- 认知科学：先做压缩，再靠检索与反馈稳固理解
+
+## 本地运行
+
+项目没有构建步骤，直接启动一个静态服务器即可：
 
 ```bash
 python3 -m http.server 4173
@@ -12,23 +18,26 @@ python3 -m http.server 4173
 
 然后访问 `http://localhost:4173`。
 
-## 文件结构
+## 文件
 
-- `index.html`：专题页内容与结构
-- `styles.css`：移动端优先的视觉样式
-- `script.js`：章节高亮与 reveal 动画
+- `index.html`：应用壳与分享元数据
+- `styles.css`：手机竖版 UI、留白系统与交互动效
+- `script.js`：状态机、关卡逻辑、localStorage 持久化
+- `share-cover.svg` / `share-cover.png`：分享封面图
+- `favicon.svg`：站点图标
 
-## 发布到 Cloudflare Pages
+## 部署到 Cloudflare Pages
 
-在 Cloudflare Dashboard 中：
+这个项目是纯静态站点，推荐直接使用 Git 自动部署：
 
 1. 进入 `Workers & Pages`
-2. 点击 `Create application`
-3. 选择 `Pages` 并连接这个 GitHub 仓库
-4. 配置：
+2. `Create application`
+3. 选择 `Pages`
+4. 选择 `Connect to Git`
+5. 连接仓库
+6. 使用以下配置：
    - `Production branch`: `main`
    - `Build command`: 留空
    - `Build output directory`: `/`
-5. 首次部署成功后，到 `Custom domains` 里绑定你在 Cloudflare 购买的域名
 
-注意：自定义域名请直接在 Pages 的 `Custom domains` 中配置，不要先手动添加指向 `pages.dev` 的 DNS 记录。
+部署成功后，可以在 `Custom domains` 中绑定域名。

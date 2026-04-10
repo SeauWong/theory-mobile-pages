@@ -1,61 +1,73 @@
 <svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="bg" x1="134" y1="40" x2="1028" y2="634" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#FAF1E7"/>
-      <stop offset="0.55" stop-color="#F3E7DA"/>
-      <stop offset="1" stop-color="#F9F5EF"/>
+    <linearGradient id="bg" x1="98" y1="34" x2="1048" y2="646" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8F4ED"/>
+      <stop offset="1" stop-color="#F1ECE4"/>
     </linearGradient>
-    <linearGradient id="warm" x1="810" y1="40" x2="1038" y2="250" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#A63D2D"/>
-      <stop offset="1" stop-color="#D79E2B" stop-opacity="0.16"/>
-    </linearGradient>
-    <linearGradient id="cool" x1="128" y1="350" x2="428" y2="604" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#255F5A" stop-opacity="0.42"/>
-      <stop offset="1" stop-color="#255F5A" stop-opacity="0.06"/>
-    </linearGradient>
-    <filter id="shadow" x="164" y="72" width="872" height="486" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+    <radialGradient id="orbA" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1010 126) rotate(90) scale(142)">
+      <stop stop-color="#4E6B73" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#4E6B73" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="orbB" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(170 518) rotate(90) scale(190)">
+      <stop stop-color="#B97839" stop-opacity="0.2"/>
+      <stop offset="1" stop-color="#B97839" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow" x="298" y="76" width="604" height="478" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
       <feFlood flood-opacity="0" result="BackgroundImageFix"/>
       <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-      <feOffset dy="18"/>
-      <feGaussianBlur stdDeviation="20"/>
-      <feColorMatrix type="matrix" values="0 0 0 0 0.239216 0 0 0 0 0.160784 0 0 0 0 0.0705882 0 0 0 0.12 0"/>
+      <feOffset dy="26"/>
+      <feGaussianBlur stdDeviation="24"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.101961 0 0 0 0 0.0980392 0 0 0 0 0.0862745 0 0 0 0.14 0"/>
       <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_1"/>
       <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_1" result="shape"/>
     </filter>
   </defs>
 
   <rect width="1200" height="630" fill="url(#bg)"/>
-  <circle cx="1010" cy="120" r="130" fill="url(#warm)"/>
-  <circle cx="182" cy="512" r="174" fill="url(#cool)"/>
+  <circle cx="1010" cy="126" r="142" fill="url(#orbA)"/>
+  <circle cx="170" cy="518" r="190" fill="url(#orbB)"/>
 
-  <g filter="url(#shadow)">
-    <rect x="204" y="94" width="792" height="406" rx="34" fill="#FFF9F2" fill-opacity="0.9"/>
-    <rect x="204.7" y="94.7" width="790.6" height="404.6" rx="33.3" stroke="#1D1B17" stroke-opacity="0.08" stroke-width="1.4"/>
+  <g opacity="0.32">
+    <path d="M0 96H1200" stroke="#171717" stroke-opacity="0.08"/>
+    <path d="M0 156H1200" stroke="#171717" stroke-opacity="0.08"/>
+    <path d="M0 216H1200" stroke="#171717" stroke-opacity="0.08"/>
+    <path d="M0 276H1200" stroke="#171717" stroke-opacity="0.08"/>
+    <path d="M0 336H1200" stroke="#171717" stroke-opacity="0.08"/>
+    <path d="M0 396H1200" stroke="#171717" stroke-opacity="0.08"/>
+    <path d="M0 456H1200" stroke="#171717" stroke-opacity="0.08"/>
+    <path d="M0 516H1200" stroke="#171717" stroke-opacity="0.08"/>
+    <path d="M90 0V630" stroke="#171717" stroke-opacity="0.08"/>
+    <path d="M150 0V630" stroke="#171717" stroke-opacity="0.08"/>
+    <path d="M210 0V630" stroke="#171717" stroke-opacity="0.08"/>
+    <path d="M270 0V630" stroke="#171717" stroke-opacity="0.08"/>
+    <path d="M330 0V630" stroke="#171717" stroke-opacity="0.08"/>
+    <path d="M390 0V630" stroke="#171717" stroke-opacity="0.08"/>
   </g>
 
-  <rect x="246" y="130" width="146" height="34" rx="17" fill="#1D1B17"/>
-  <text x="273" y="153" fill="#FFF9F2" font-family="Avenir Next, PingFang SC, Hiragino Sans GB, sans-serif" font-size="16" font-weight="700" letter-spacing="0.12em">专题页</text>
+  <g filter="url(#shadow)">
+    <rect x="346" y="98" width="508" height="382" rx="40" fill="#FFFDF9" fill-opacity="0.88"/>
+    <rect x="346.75" y="98.75" width="506.5" height="380.5" rx="39.25" stroke="#171717" stroke-opacity="0.08" stroke-width="1.5"/>
+  </g>
 
-  <text x="246" y="244" fill="#1D1B17" font-family="Iowan Old Style, Songti SC, STSong, serif" font-size="74" font-weight="400" letter-spacing="-0.04em">结构、建构、</text>
-  <text x="246" y="328" fill="#1D1B17" font-family="Iowan Old Style, Songti SC, STSong, serif" font-size="74" font-weight="400" letter-spacing="-0.04em">解构与心智</text>
+  <rect x="386" y="136" width="148" height="34" rx="17" fill="#171717"/>
+  <text x="414" y="158" fill="#FFFDF9" font-family="Avenir Next, PingFang SC, Hiragino Sans GB, sans-serif" font-size="15" font-weight="700" letter-spacing="0.08em">System Recon</text>
 
-  <text x="248" y="388" fill="#635648" font-family="Avenir Next, PingFang SC, Hiragino Sans GB, sans-serif" font-size="24" font-weight="600">
-    四种框架，不是一条接力赛
-  </text>
-  <text x="248" y="430" fill="#635648" font-family="Avenir Next, PingFang SC, Hiragino Sans GB, sans-serif" font-size="22" font-weight="500">
-    结构主义、建构主义、解构主义与认知科学
-  </text>
-  <text x="248" y="464" fill="#635648" font-family="Avenir Next, PingFang SC, Hiragino Sans GB, sans-serif" font-size="22" font-weight="500">
-    面向移动端的中文专题页
-  </text>
+  <text x="386" y="246" fill="#171717" font-family="Iowan Old Style, Songti SC, STSong, serif" font-size="68" font-weight="400" letter-spacing="-0.05em">系统侦察任务</text>
+  <text x="386" y="305" fill="#6A665D" font-family="Avenir Next, PingFang SC, Hiragino Sans GB, sans-serif" font-size="24" font-weight="600">在 AI 时代，先认识系统，再借 AI 加速</text>
+  <text x="386" y="345" fill="#6A665D" font-family="Avenir Next, PingFang SC, Hiragino Sans GB, sans-serif" font-size="21" font-weight="500">定边界 · 看结构 · 建模型 · 做压缩 · 校验而非代替</text>
 
-  <rect x="824" y="154" width="116" height="116" rx="24" fill="#A63D2D" fill-opacity="0.92"/>
-  <rect x="774" y="244" width="116" height="116" rx="24" fill="#255F5A" fill-opacity="0.94"/>
-  <rect x="874" y="294" width="116" height="116" rx="24" fill="#D79E2B" fill-opacity="0.92"/>
-  <rect x="694" y="182" width="116" height="116" rx="24" fill="#1D1B17" fill-opacity="0.9"/>
+  <rect x="390" y="388" width="104" height="48" rx="24" fill="#4E6B73" fill-opacity="0.14"/>
+  <text x="417" y="417" fill="#4E6B73" font-family="Avenir Next, PingFang SC, Hiragino Sans GB, sans-serif" font-size="18" font-weight="700">关卡 1-5</text>
 
-  <text x="722" y="248" fill="#FFF9F2" font-family="Avenir Next, PingFang SC, Hiragino Sans GB, sans-serif" font-size="16" font-weight="800">结构</text>
-  <text x="850" y="220" fill="#FFF9F2" font-family="Avenir Next, PingFang SC, Hiragino Sans GB, sans-serif" font-size="16" font-weight="800">建构</text>
-  <text x="800" y="310" fill="#FFF9F2" font-family="Avenir Next, PingFang SC, Hiragino Sans GB, sans-serif" font-size="16" font-weight="800">认知</text>
-  <text x="902" y="360" fill="#1D1B17" font-family="Avenir Next, PingFang SC, Hiragino Sans GB, sans-serif" font-size="16" font-weight="800">解构</text>
+  <rect x="720" y="176" width="122" height="72" rx="18" fill="#4E6B73" fill-opacity="0.9"/>
+  <text x="751" y="218" fill="#FFFDF9" font-family="Avenir Next, PingFang SC, Hiragino Sans GB, sans-serif" font-size="22" font-weight="700">边界</text>
+
+  <rect x="804" y="290" width="122" height="72" rx="18" fill="#171717" fill-opacity="0.9"/>
+  <text x="835" y="332" fill="#FFFDF9" font-family="Avenir Next, PingFang SC, Hiragino Sans GB, sans-serif" font-size="22" font-weight="700">结构</text>
+
+  <rect x="684" y="374" width="122" height="72" rx="18" fill="#B97839" fill-opacity="0.9"/>
+  <text x="714" y="416" fill="#FFFDF9" font-family="Avenir Next, PingFang SC, Hiragino Sans GB, sans-serif" font-size="22" font-weight="700">模型</text>
+
+  <path d="M801 247C818 263 829 275 835 290" stroke="#171717" stroke-opacity="0.18" stroke-width="2"/>
+  <path d="M804 364C781 373 770 382 760 394" stroke="#171717" stroke-opacity="0.18" stroke-width="2"/>
 </svg>
